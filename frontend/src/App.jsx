@@ -1,6 +1,7 @@
 import PromotionBar from './components/PromotionBar'
 import Header from './components/Header'
 import ScrollBar from './components/ScrollBar'
+import Footer from './components/Footer'
 
 export default function App() {
   return (
@@ -8,6 +9,7 @@ export default function App() {
       <PromotionBar />
       <Header />
       <ScrollBar />
+      <Footer />
     </>
   )
 }
