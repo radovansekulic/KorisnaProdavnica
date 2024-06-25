@@ -12,8 +12,10 @@ export default function PromotionBar() {
 
     useEffect(() => {
         const interval = setInterval(() => {
-            sethtmlText(prevContent => prevContent + htmlText);
-        }, 2000);
+            sethtmlText(prevContent => prevContent + `
+                <span style="margin: 10px 0 10px 10px; position: relative; left: -100%; font-family: Inter"> Besplatna dostava za iznose veće od 2000RSD </span>
+            `);
+        }, 100);
 
         return () => clearInterval(interval);
     })
