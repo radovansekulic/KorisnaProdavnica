@@ -14,11 +14,62 @@ class DatabaseSeeder extends Seeder
      */
     public function run()
     {
-        // \App\Models\User::factory(10)->create();
+        \App\Models\Order::create([
+            'name' => 'Petar Petrović',
+            'product' => 'G lampa RGB Bluetooth zvucnik X1, Čarobna lopta koja se transformiše x2',
+            'price' => '6847',
+            'email' => 'petar.petrovic@gmail.com',
+            'phone' => '+381 61 3994873',
+            'location' => 'Beograd, Knez Mihalova 17'
+        ]);
 
-        // \App\Models\User::factory()->create([
-        //     'name' => 'Test User',
-        //     'email' => 'test@example.com',
-        // ]);
+        \App\Models\Order::create([
+            'name' => 'Miloš Obilić',
+            'product' => 'Mašina Za Vakumiranje Hrane + 10 kesa za vakumiranje X1',
+            'price' => '2440',
+            'email' => 'milos.obilic@gmail.com',
+            'phone' => '+381 61 7882635',
+            'location' => 'Beograd, Knez Mihalova 24'
+        ]);
+
+        \App\Models\Product::create([
+            'name' => 'Čarobna lopta koja se transformiše',
+            'price' => '1799',
+            'false_price' => '2500',
+            'description' => 'Baci disk, a uhvati loptu! Magična igračka u obliku diska, koja se prilikom bacanja u vazduhu transformiše u loptu. Obradujte Vaše dete jer će obožavati ovu zabavnu loptu! Posle ove magične lopte, igra dobacivanja više nikada neće biti ista.',
+            'images' => 'ART1.jpg ART2.jpg ART3.jpg ART4.jpg',
+        ]);
+
+        \App\Models\Product::create([
+            'name' => 'G lampa RGB Bluetooth zvucnik',
+            'price' => '2799',
+            'false_price' => '4500',
+            'description' => 'Osvetlite prostor i doživite vrhunsku zabavu s pametnom G RGB lampom! 3u1 funkcionalnost: Bluetooth zvučnik, 10 W bežični punjač i spektakularno RGB svetlo koje prati ritam muzike. Uživajte u čistom zvuku putem Bluetooth 5.0, bez nereda od kablova. Transformišite svoj prostor s 6 režima sinhronizacije svetla, prilagodite boje i stvorite jedinstvenu atmosferu. Kompatibilno sa širokim spektrom uređaja. Savršena kombinacija estetike i funkcionalnosti za inspirativno okruženje.',
+            'images' => 'ART5.jpg ART6.jpg ART7.jpg ART8.jpg',
+        ]);
+
+        \App\Models\Product::create([
+            'name' => 'Svetleća lopta za fudbal',
+            'price' => '1799',
+            'false_price' => '2400',
+            'description' => 'Bezbedna za dom, ne oštećuje podove. Odbija se od ivica i prepreka bez rušenja stvari. Svetlosni efekti i zvuci dodaju čaroliju. Idealna za vežbanje veština. Prečnik 18 cm, visina 6 cm. Radi na 4 AA baterije (nisu uključene). Zabava za celu porodicu.',
+            'images' => 'ART9.jpg ART10.jpg ART11.jpg ART12.jpg',
+        ]);
+
+        \App\Models\Product::create([
+            'name' => 'Mašina Za Vakumiranje Hrane + 10 kesa za vakumiranje',
+            'price' => '1990',
+            'false_price' => '3400',
+            'description' => 'S ovom vakuumskom mašinom, možete brzo i jednostavno vakumirati razne vrste mesa, kao što su piletina, svinjetina i junetina, čime produžavate njihovu svježinu. Također možete koristiti ovu mašinu kako biste spakovali preostalu hranu. Iako radi na struju, efikasna je i štedi vam novac.',
+            'images' => 'ART13.jpg ART14.jpg ART15.jpg ART16.jpg',
+        ]);
+
+        \App\Models\Product::create([
+            'name' => 'Magična leteća loptica',
+            'price' => '1799',
+            'false_price' => '2200',
+            'description' => 'Da biste napunili ovu lopticu putem USB-a, potrebno je samo pola sata, a zatim ćete se zabavljati čitav dan! Efikasna i kvalitetna za beskrajnu zabavu, igru i smeh!',
+            'images' => 'ART17.jpg ART18.jpg ART19.jpg ART20.jpg',
+        ]);
     }
 }
