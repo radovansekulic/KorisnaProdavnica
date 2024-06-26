@@ -17,7 +17,7 @@ export default function Footer() {
             </div>
             <div className="mb-10 col-span-3">
                 <h1 className="mb-2 font-medium">ZAPRATI NAS</h1>
-                <p class="mb-2">Zapratite nas na društvenim mrežama za ekskluzivne sadržaje i najnovije informacije</p>
+                <p className="mb-2">Zapratite nas na društvenim mrežama za ekskluzivne sadržaje i najnovije informacije</p>
                 <u className="flex gap-2">
                     <a href="#">Facebook</a>
                     <a href="#">Tiktok</a>
@@ -26,10 +26,10 @@ export default function Footer() {
             </div>
             <div className="mb-5 col-span-3">
                 <h1 className="mb-2 font-medium">NEWSLETTER</h1>
-                <p class="mb-4">Budite prvi koji će saznati o najnovijim trendovima i ekskluzivnim ponudama</p>
-                <div class="flex items-center left-[-10px]">
-                    <input type="mail" name="email" class="rounded-md bg-white border focus:outline-none w-full h-[54px] px-4 py-2" placeholder="Email Adresa" />
-                    <button class="rounded-lg py-2 px-5 h-[54px] text-2xl bg-rose-500 ms-[-10px] text-white">→</button>
+                <p className="mb-4">Budite prvi koji će saznati o najnovijim trendovima i ekskluzivnim ponudama</p>
+                <div className="flex items-center left-[-10px]">
+                    <input type="mail" name="email" className="rounded-md bg-white border focus:outline-none w-full h-[54px] px-4 py-2" placeholder="Email Adresa" />
+                    <button className="rounded-lg py-2 px-5 h-[54px] text-2xl bg-rose-500 ms-[-10px] text-white">→</button>
                 </div>
             </div>
         </footer>

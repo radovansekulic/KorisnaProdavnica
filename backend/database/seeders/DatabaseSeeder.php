@@ -37,7 +37,7 @@ class DatabaseSeeder extends Seeder
             'price' => '1799',
             'false_price' => '2500',
             'description' => 'Baci disk, a uhvati loptu! Magična igračka u obliku diska, koja se prilikom bacanja u vazduhu transformiše u loptu. Obradujte Vaše dete jer će obožavati ovu zabavnu loptu! Posle ove magične lopte, igra dobacivanja više nikada neće biti ista.',
-            'images' => 'ART1.jpg ART2.jpg ART3.jpg ART4.jpg',
+            'images' => 'ART1 ART2 ART3 ART4',
         ]);
 
         \App\Models\Product::create([
@@ -45,7 +45,7 @@ class DatabaseSeeder extends Seeder
             'price' => '2799',
             'false_price' => '4500',
             'description' => 'Osvetlite prostor i doživite vrhunsku zabavu s pametnom G RGB lampom! 3u1 funkcionalnost: Bluetooth zvučnik, 10 W bežični punjač i spektakularno RGB svetlo koje prati ritam muzike. Uživajte u čistom zvuku putem Bluetooth 5.0, bez nereda od kablova. Transformišite svoj prostor s 6 režima sinhronizacije svetla, prilagodite boje i stvorite jedinstvenu atmosferu. Kompatibilno sa širokim spektrom uređaja. Savršena kombinacija estetike i funkcionalnosti za inspirativno okruženje.',
-            'images' => 'ART5.jpg ART6.jpg ART7.jpg ART8.jpg',
+            'images' => 'ART5 ART6 ART7 ART8',
         ]);
 
         \App\Models\Product::create([
@@ -53,7 +53,7 @@ class DatabaseSeeder extends Seeder
             'price' => '1799',
             'false_price' => '2400',
             'description' => 'Bezbedna za dom, ne oštećuje podove. Odbija se od ivica i prepreka bez rušenja stvari. Svetlosni efekti i zvuci dodaju čaroliju. Idealna za vežbanje veština. Prečnik 18 cm, visina 6 cm. Radi na 4 AA baterije (nisu uključene). Zabava za celu porodicu.',
-            'images' => 'ART9.jpg ART10.jpg ART11.jpg ART12.jpg',
+            'images' => 'ART9 ART10 ART11 ART12',
         ]);
 
         \App\Models\Product::create([
@@ -61,7 +61,7 @@ class DatabaseSeeder extends Seeder
             'price' => '1990',
             'false_price' => '3400',
             'description' => 'S ovom vakuumskom mašinom, možete brzo i jednostavno vakumirati razne vrste mesa, kao što su piletina, svinjetina i junetina, čime produžavate njihovu svježinu. Također možete koristiti ovu mašinu kako biste spakovali preostalu hranu. Iako radi na struju, efikasna je i štedi vam novac.',
-            'images' => 'ART13.jpg ART14.jpg ART15.jpg ART16.jpg',
+            'images' => 'ART13 ART14 ART15 ART16',
         ]);
 
         \App\Models\Product::create([
@@ -69,7 +69,7 @@ class DatabaseSeeder extends Seeder
             'price' => '1799',
             'false_price' => '2200',
             'description' => 'Da biste napunili ovu lopticu putem USB-a, potrebno je samo pola sata, a zatim ćete se zabavljati čitav dan! Efikasna i kvalitetna za beskrajnu zabavu, igru i smeh!',
-            'images' => 'ART17.jpg ART18.jpg ART19.jpg ART20.jpg',
+            'images' => 'ART17 ART18 ART19 ART20',
         ]);
     }
 }
