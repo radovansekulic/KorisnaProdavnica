@@ -31,7 +31,7 @@ export default function Timer() {
     }, []);
 
     return (
-        <section className="px-10 my-10">
+        <section className="my-10 max-w-96 m-auto">
             <h1 className="text-center text-4xl font-bold font-[Inter]">POŽURI AKCIJA TRAJE JOŠ👇</h1>
             <div className="flex justify-between text-[#2D2D2D] mt-5 items-center">
                 <div className="bg-[#E1FF3E] w-[20%] rounded-xl text-center py-4 px-1">
