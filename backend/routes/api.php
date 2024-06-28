@@ -4,6 +4,7 @@ use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
 use App\Http\Controllers\OrderController;
+use App\Http\Controllers\EmailController;
 
 /*
 |--------------------------------------------------------------------------
@@ -26,3 +27,4 @@ Route::controller(ProductController::class)->group(function () {
 });
 
 Route::post('/order', [OrderController::class, 'index']);
+Route::post('/email', [EmailController::class, 'index']);

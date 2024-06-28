@@ -30,7 +30,7 @@ export default function App() {
                         <p className="mb-5 text-xl md:w-2/4">Dobrodošli u Korisnu Prodavnicu <br className="md:hidden" />- Vašu destinaciju za
                             unapređenje Vašeg doma.
                         </p>
-                        <a href="#">
+                        <a href="/collection">
                             <button className="flex text-white items-center px-4 py-2 bg-[#ED1C24]">Pogledaj Ponudu →</button>
                         </a>
                     </div>
