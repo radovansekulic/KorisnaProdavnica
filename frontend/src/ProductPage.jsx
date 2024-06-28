@@ -8,6 +8,7 @@ import ScrollBar from './components/ScrollBar'
 import Footer from './components/Footer'
 import Collection from './components/Collection'
 import Timer from './components/Timer'
+import Cart from './components/Cart';
 
 export default function ProductPage() {
 
@@ -70,20 +71,10 @@ export default function ProductPage() {
                 <p>(7)</p>
               </div>
               <div className='flex gap-5 mb-10'>
-                <p className='text-3xl text-[#2D2D2D]'>1800</p><p className='text-3xl'><s>2400RSD</s></p>
+                <p className='text-3xl text-[#2D2D2D]'>{product.price}</p><p className='text-3xl'><s>{product.false_price}RSD</s></p>
                 <p className='bg-[#E1FF3E] text-[#2D2D2D] px-2 rounded-full h-[70%]'>-40%</p>
               </div>
-              <button className='bg-rose-500 w-full mb-20 text-white rounded-3xl cursor-pointer p-4 pe-10 flex items-center justify-center gap-2'>
-                <svg width="34" height="34" viewBox="0 0 22 22" fill="none" xmlns="http://www.w3.org/2000/svg">
-                  <path d="M7 15L15.7201 14.2733C18.4486 14.046 19.0611 13.45 19.3635 10.7289L20 5" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" />
-                  <path d="M5 5H21" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" />
-                  <circle cx="5" cy="19" r="2" stroke="#fff" strokeWidth="1.5" />
-                  <circle cx="16" cy="19" r="2" stroke="#fff" strokeWidth="1.5" />
-                  <path d="M7 19L14 19" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" />
-                  <path d="M1 1H1.966C2.91068 1 3.73414 1.62459 3.96326 2.51493L6.93852 14.0765C7.08887 14.6608 6.9602 15.2797 6.58824 15.7616L5.63213 17" stroke="#fff" strokeWidth="1.5" strokeLinecap="round" />
-                </svg>
-                DODAJ U KORPU
-              </button>
+              <Cart product={product} />
               <Timer />
               <div className='bg-gray-100 p-5 mt-20 mb-12'>
                 <h2 className='flex gap-2 mb-4 items-center font-semibold'>
@@ -122,7 +113,7 @@ export default function ProductPage() {
                       </div>
                     </div>
                   </div>
-                  <p className='mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                  <p className='mt-2'>Odličan proizvod, zaista ispunjava očekivanja. Koristimo ga redovno i preporučujem ga svima!</p>
                 </div>
               </div>
               <div className='mb-7'>
@@ -150,7 +141,7 @@ export default function ProductPage() {
                       </div>
                     </div>
                   </div>
-                  <p className='mt-2'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. </p>
+                  <p className='mt-2'>Zaista odličan proizvod koji ispunjava sva očekivanja. Kvalitet je vrhunski i definitivno se isplati!</p>
                 </div>
               </div>
             </div>

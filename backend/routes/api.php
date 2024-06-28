@@ -3,6 +3,7 @@
 use Illuminate\Http\Request;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\ProductController;
+use App\Http\Controllers\OrderController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,3 +24,5 @@ Route::controller(ProductController::class)->group(function () {
     Route::get('/product/{id}', 'index')->name('product');
     Route::get('/collection', 'show')->name('collection');
 });
+
+Route::post('/order', [OrderController::class, 'index']);

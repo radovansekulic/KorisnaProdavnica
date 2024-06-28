@@ -18,9 +18,9 @@ return new class extends Migration
             $table->string('name');
             $table->text('product');
             $table->integer('price');
-            $table->string('email');
+            $table->string('email')->nullable();
             $table->string('phone');
-            $table->string('location');
+            $table->string('adress');
             $table->timestamps();
         });
     }

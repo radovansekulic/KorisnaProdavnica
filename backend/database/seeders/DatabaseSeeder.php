@@ -20,7 +20,7 @@ class DatabaseSeeder extends Seeder
             'price' => '6847',
             'email' => 'petar.petrovic@gmail.com',
             'phone' => '+381 61 3994873',
-            'location' => 'Beograd, Knez Mihalova 17'
+            'adress' => 'Beograd, Knez Mihalova 17'
         ]);
 
         \App\Models\Order::create([
@@ -29,7 +29,7 @@ class DatabaseSeeder extends Seeder
             'price' => '2440',
             'email' => 'milos.obilic@gmail.com',
             'phone' => '+381 61 7882635',
-            'location' => 'Beograd, Knez Mihalova 24'
+            'adress' => 'Beograd, Knez Mihalova 24'
         ]);
 
         \App\Models\Product::create([

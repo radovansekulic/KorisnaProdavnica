@@ -1,4 +1,18 @@
+import { useEffect, useState } from "react"
+
 export default function header() {
+
+    const [isActive, setActive] = useState();
+    const [items, setCartItems] = useState([]);
+
+    const counterItems = () => {
+        useEffect(() => {
+            const storedCartItems = JSON.parse(localStorage.getItem('cartItems'));
+            setCartItems(storedCartItems);
+            items == 1 ? setActive(false) : setActive(true);
+        }, []);
+    }; counterItems();
+
     return (
         <header>
             <div className="container mx-auto flex items-center px-10 justify-between border-b">
@@ -33,11 +47,14 @@ export default function header() {
                             <path d="M16.5 6.5C16.5 8.98528 14.4853 11 12 11C9.51472 11 7.5 8.98528 7.5 6.5C7.5 4.01472 9.51472 2 12 2C14.4853 2 16.5 4.01472 16.5 6.5Z" stroke="#3B3933" strokeWidth="1.5" />
                         </svg>
                     </span>
-                    <span className="cursor-pointer">
+                    <span className="cursor-pointer relative">
                         <svg width="34" height="34" viewBox="0 0 24 24" fill="none" xmlns="http://www.w3.org/2000/svg">
                             <path d="M3.06164 14.4413L3.42688 12.2985C3.85856 9.76583 4.0744 8.49951 4.92914 7.74975C5.78389 7 7.01171 7 9.46734 7H14.5327C16.9883 7 18.2161 7 19.0709 7.74975C19.9256 8.49951 20.1414 9.76583 20.5731 12.2985L20.9384 14.4413C21.5357 17.946 21.8344 19.6983 20.9147 20.8491C19.995 22 18.2959 22 14.8979 22H9.1021C5.70406 22 4.00504 22 3.08533 20.8491C2.16562 19.6983 2.4643 17.946 3.06164 14.4413Z" stroke="#3B3933" strokeWidth="1.5" />
                             <path d="M7.5 9L7.71501 5.98983C7.87559 3.74176 9.7462 2 12 2C14.2538 2 16.1244 3.74176 16.285 5.98983L16.5 9" stroke="#3B3933" strokeWidth="1.5" strokeLinecap="round" />
                         </svg>
+                        {items && isActive && (
+                            <span className='block absolute bottom-4 left-5 bg-rose-500 text-white rounded-full text-xs px-1'>{items.length}</span>
+                        )}
                     </span>
                 </div>
             </div>
