@@ -9,6 +9,7 @@ import Footer from './components/Footer'
 import Collection from './components/Collection'
 import Timer from './components/Timer'
 import Cart from './components/Cart';
+import Popup from './components/Popup'
 
 export default function ProductPage() {
 
@@ -31,6 +32,7 @@ export default function ProductPage() {
     <>
       <PromotionBar />
       <Header />
+      <Popup />
 
       <section className='container mx-auto px-10 mt-5 mb-32 font-[Inter]'>
         <p className='md:hidden mb-3'>POČETNA &#62; AKCIJA &#62; ZA KUĆU</p>
